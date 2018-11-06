@@ -18,7 +18,12 @@ function draw() {
   background(0);
   pixelSize = Math.round(height/100);
   //excite=map(mouseY, 0, height, 1, 0);
-  excite=vol;
+  if (vol<1.5) {
+    excite=vol;
+  } else {
+    excite = 1.5;
+  }
+
   dogWidth=Math.round(map(excite,0,1,26,17));
   //dogWidth=Math.round(map(mouseX,0, width, 16, 23));
   scale(1,-1);
