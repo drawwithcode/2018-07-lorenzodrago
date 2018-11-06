@@ -17,8 +17,8 @@ function draw() {
   var vol = mic.getLevel()*5;
   background(0);
   pixelSize = Math.round(height/100);
-  excite=map(mouseY, 0, height, 1, 0);
-  //excite=vol;
+  //excite=map(mouseY, 0, height, 1, 0);
+  excite=vol;
   dogWidth=Math.round(map(excite,0,1,26,17));
   //dogWidth=Math.round(map(mouseX,0, width, 16, 23));
   scale(1,-1);
